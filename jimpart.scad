@@ -13,7 +13,7 @@ difference() {
     union() {
         cylinder(h=bigh, r=bigr, $fn=facets);
         translate([0,0,bigh])
-            cylinder(h=toph,r=topr,$fn=facets);
+            cylinder(h=toph,r1=topr, r2=topr-.5,$fn=facets);
     }
     translate([0,0,-1])
         cylinder(h=1+(bottomh),r=bottomr,center=false,$fn=facets);
